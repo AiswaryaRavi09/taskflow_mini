@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Admin User",
+      "email": "admin@taskflow.com",
+      "role": "admin"
+    },
+    {
+      "id": "user-2",
+      "name": "John Doe",
+      "email": "john@taskflow.com",
+      "role": "staff"
+    },
+    {
+      "id": "user-3",
+      "name": "Jane Smith",
+      "email": "jane@taskflow.com",
+      "role": "staff"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-1",
+      "name": "Product App",
+      "description": "Mobile application development project",
+      "archived": false,
+      "createdAt": "2026-01-05T10:00:00.000Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "projectId": "project-1",
+      "title": "Design UI mockups",
+      "description": "Create high-fidelity mockups for the main screens",
+      "status": "done",
+      "priority": "high",
+      "startDate": "2025-12-16T10:00:00.000Z",
+      "dueDate": "2025-12-21T10:00:00.000Z",
+      "estimateHours": 8.0,
+      "timeSpentHours": 7.5,
+      "labels": ["design", "ui"],
+      "assigneeIds": ["user-2"],
+      "createdAt": "2025-12-16T10:00:00.000Z"
+    },
+    {
+      "id": "task-2",
+      "projectId": "project-1",
+      "title": "Implement authentication",
+      "description": "Setup Firebase authentication with email/password",
+      "status": "inProgress",
+      "priority": "critical",
+      "startDate": "2025-12-26T10:00:00.000Z",
+      "dueDate": "2026-01-10T10:00:00.000Z",
+      "estimateHours": 12.0,
+      "timeSpentHours": 6.0,
+      "labels": ["backend", "security"],
+      "assigneeIds": ["user-2", "user-3"],
+      "createdAt": "2025-12-26T10:00:00.000Z"
+    },
+    {
+      "id": "task-3",
+      "projectId": "project-1",
+      "title": "Setup CI/CD pipeline",
+      "description": "Configure GitHub Actions for automated testing and deployment",
+      "status": "blocked",
+      "priority": "medium",
+      "startDate": "2025-12-31T10:00:00.000Z",
+      "dueDate": "2026-01-15T10:00:00.000Z",
+      "estimateHours": 6.0,
+      "timeSpentHours": 2.0,
+      "labels": ["devops"],
+      "assigneeIds": ["user-3"],
+      "createdAt": "2025-12-31T10:00:00.000Z"
+    },
+    {
+      "id": "task-4",
+      "projectId": "project-1",
+      "title": "Write API documentation",
+      "description": "Document all REST API endpoints with examples",
+      "status": "inReview",
+      "priority": "low",
+      "startDate": "2026-01-02T10:00:00.000Z",
+      "dueDate": "2026-01-04T10:00:00.000Z",
+      "estimateHours": 4.0,
+      "timeSpentHours": 5.0,
+      "labels": ["documentation"],
+      "assigneeIds": ["user-2"],
+      "createdAt": "2026-01-02T10:00:00.000Z"
+    },
+    {
+      "id": "task-5",
+      "projectId": "project-1",
+      "title": "Build dashboard analytics",
+      "description": "Create charts and metrics for the admin dashboard",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-01-20T10:00:00.000Z",
+      "estimateHours": 10.0,
+      "timeSpentHours": 0.0,
+      "labels": ["frontend", "analytics"],
+      "assigneeIds": [],
+      "createdAt": "2026-01-05T10:00:00.000Z"
+    }
+  ],
+  "subtasks": [
+    {
+      "id": "subtask-1",
+      "taskId": "task-2",
+      "title": "Setup Firebase project",
+      "completed": true,
+      "assigneeId": "user-2"
+    },
+    {
+      "id": "subtask-2",
+      "taskId": "task-2",
+      "title": "Implement login screen",
+      "completed": true,
+      "assigneeId": ".user-2"
+    },
+    {
+      "id": "subtask-3",
+      "taskId": "task-2",
+      "title": "Add password reset flow",
+      "completed": false,
+      "assigneeId": "user-3"
+    }
+  ]
+}
