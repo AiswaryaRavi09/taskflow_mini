@@ -1,17 +1,20 @@
-# taskflow_mini
+# TaskFlow Mini
 
-A new Flutter project.
+A Flutter task management application built as part of the **TaskFlow Mini take-home assignment**.  
+This project demonstrates **clean architecture**, **BLoC pattern**, and **local persistence** with a focus on scalable and maintainable code.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Quick Start
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
+- Flutter SDK: **3.24.0 or higher**
+- Dart SDK: **3.5.0 or higher**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation & Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# taskflow_mini
+```bash
+git clone https://github.com/AiswaryaRavi09/taskflow_mini.git
+cd taskflow_mini
+flutter pub get
+flutter run
